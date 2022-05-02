@@ -1,0 +1,550 @@
+/* Основной цвет текста  color: #212121;      --title-text-color:#212121; */
+/* вторичный текст контакты,абзац  color: #757575; --primari-text-color: #757575; */
+/* цвет фона background: #FFFFFF;        --primari-white-color:#FFFFFF;*/
+/* контакты в футере    --contact-footer: rgba(255, 255, 255, 0.6); */
+/* цвет кнопок background: --accent-color: #2196F3;*/
+/* цвет героя и футера     --hero-bgrcolor: #2F303A; */
+/* фон кнопки в фильтре --button-filter: #F5F4FA; */
+/* Кнопка героя ховер  --hover-button: #188ce8; */
+/* border-box --border-box: #EEEEEE; */
+
+
+:root {
+--title-text-color: #212121;
+--primari-text-color: #757575;
+--primari-white-color:#FFFFFF;
+--contact-footer: rgba(255, 255, 255, 0.6);
+--accent-color: #2196F3;
+--hero-bgrcolor: #2F303A;
+--button-filter: #F5F4FA;
+--hover-button: #188ce8;
+--border-box: #EEEEEE;
+}
+
+
+.page {
+background-color: var(--primari-white-color);
+color: var(--primari-text-color);
+font-family: Roboto, sans-serif;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.17;
+letter-spacing: 0.03em;
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+/* утилиты */
+
+.container {
+    width: 1200px;
+    /* outline: 2px solid; */
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Main-nav */
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+/* header */
+
+.container.header {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+}
+
+.header {
+    border-bottom: 1px solid var(--border-box);
+}
+
+.logo-accent,
+.logo-black,
+.logo-white {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+.logo-accent {
+    color: var(--accent-color);
+    margin-right: -4px;
+}
+.logo-black {
+    color: var(--title-text-color);
+}
+
+.logo-white {
+    color: var(--button-filter);
+}
+
+/* site nav  */
+
+.site-nav {
+margin-bottom: 0;
+margin-top: 0;
+padding-left: 0;
+display: flex;
+margin-left: 93px;
+
+}
+
+/* .site-nav .item {
+    background-color: tomato;
+    
+} */
+
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+
+}
+
+.site-nav .link {
+    color: var(--title-text-color);
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+
+.site-nav .link:hover {
+    color: var(--accent-color);
+}
+
+
+
+#studio {
+    color: var(--accent-color);
+}
+
+#portfolio {
+    color: var(--accent-color);
+}
+
+
+/* Contact */
+
+.contact .item {
+    padding: 32px 0px;
+    margin: 0;
+}
+
+
+
+.contact {
+    display: flex;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+    margin-left: auto;
+    
+}
+
+.contact .item + .item {
+    margin-left: 50px;
+}
+
+.contact .contact-link {
+    color: var(--primari-text-color);
+}
+
+.contact .contact-link:hover {
+    color: var(--accent-color);
+}
+
+
+a {
+    text-decoration: none
+}
+
+
+/* Герой index */
+
+.hero {
+background-color: var(--hero-bgrcolor);
+text-align: center;
+padding-top: 200px;
+padding-bottom: 200px;
+}
+
+.hero .hero-title {
+    color: var(--primari-white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin: 0px 237px 30px;
+}
+
+/* Кнопки */
+
+.flex-button .item + .item {
+    margin-left: 8px;
+}
+
+
+.flex-button {
+    display:flex;
+    margin: 0;
+    padding-left: 0;
+    justify-content: center;
+    margin-bottom: 50px;
+    
+}
+
+
+
+
+.button {
+    width: 200px;
+    height: 50px;
+    background-color: var(--accent-color);
+    color: var(--primari-white-color);
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+
+.button:hover,
+.buttons:focus{
+background-color: var(--hover-button)
+}
+
+
+
+/* section */
+
+
+.section-title {
+    color: var(--title-text-color);
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+
+h2 {
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+}
+
+img {
+ display: block;
+}
+
+/* Преимущество компании  */
+
+
+.section.feature {
+        padding-bottom: 94px;
+        padding-top: 94px;
+}
+
+.feature-list {
+    display: flex;
+
+
+
+}
+
+.feature-list .flex-feature + .flex-feature {
+    margin-left: 30px;
+}
+
+
+
+.section .title {
+    color: var(--title-text-color);
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.section-title.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+/* Section work */
+
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
+
+.section.work {
+    padding-top: 0;
+
+}
+
+.work-list {
+display: flex;
+}
+
+.flex-item {
+    width: 370px;
+
+}
+
+.work-list .flex-item + .flex-item{
+    margin-left: 30px;
+}
+
+
+    /* Section team */
+
+
+.staff {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.team-list {
+    display: flex;
+    text-align: center;
+}
+
+.flex-team {
+    width: 270px;
+}
+
+.section.team .flex-team + .flex-team {
+    margin-left: 30px;
+
+}
+
+.section.team {
+    background-color: var(--button-filter);
+}
+
+
+
+
+.team-title {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.text {
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+
+
+
+/* PORTFOLIO */
+
+
+.features {
+display: flex;
+flex-wrap: wrap;
+padding: 0;
+margin: 0;
+    /* background-color: teal; */
+}
+
+.flex-element {
+margin-right: 30px;
+margin-bottom: 30px;
+
+}
+
+.box {
+padding: 20px 24px;
+border-right: 1px solid var(--border-box);
+border-bottom: 1px solid var(--border-box);
+border-left: 1px solid var(--border-box);
+width: 370px;
+}
+
+.flex-element:nth-child(3n){
+    margin-right: 0;
+}
+
+
+
+.features-title {
+    margin: 0;
+    margin-bottom: 4px;
+    margin-right: auto;
+}
+
+
+
+
+.features .features-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    margin-left:auto;
+    text-align: left;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.features .features-text {
+    color: var(--primari-text-color);
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    margin: 0;
+}
+
+/* Фильтр */
+
+/* Нужно ли мне применять єтот код?? */
+
+/* .button {
+    color: var(--primari-white-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--hover-button);
+} */
+
+
+
+
+
+.buttons {
+    background-color: var(--button-filter);
+    color: var(--title-text-color);
+    font-weight: 500;
+    padding-left: 22px;
+    padding-right: 22px;
+    font-size: 16px;
+    width: 134px;
+    height: 29.59px;
+    line-height: 1.6;
+    cursor: pointer;
+    text-align: center;
+}
+
+.buttons:hover,
+.buttons:focus {
+    background-color: var(--accent-color);
+    color: var(--primari-white-color);
+}
+
+
+/* footer */
+
+
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+.footer-list {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list .item {
+    margin-bottom: 9px;
+    
+}
+.footer-list .item:last-child {
+    margin-bottom: 0;
+}
+
+
+.address {
+    margin-top: 20px;
+    font-style: normal;
+}
+
+
+.footer.adress {
+    color: var(--primari-white-color);
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    margin-top: 20px;
+    
+}
+
+.footer {
+background-color: var(--hero-bgrcolor);
+}
+
+.footer .info {
+color: var(--contact-footer);
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.info:hover{
+    color: var(--accent-color);
+}
+
+
+
