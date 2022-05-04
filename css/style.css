@@ -148,15 +148,10 @@ margin-left: 93px;
 
 /* Contact */
 
-.contact .item {
-    padding: 32px 0px;
-    margin: 0;
-}
-
-
 
 .contact {
-    display: flex;
+    display: inline-flex;
+    align-items: center;
     margin-bottom: 0;
     margin-top: 0;
     padding-left: 0;
@@ -164,8 +159,24 @@ margin-left: 93px;
     
 }
 
+
+
+
+
+.contact .item {
+    padding: 32px 0px;
+    margin: 0;
+
+}
+
+li.item.items {
+
+    display: inline-flex;
+    align-items: center;
+}
+
 .contact .item + .item {
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 .contact .contact-link {
@@ -175,6 +186,50 @@ margin-left: 93px;
 .contact .contact-link:hover {
     color: var(--accent-color);
 }
+
+
+
+.items::before {
+    display: inline-block;
+    content: '';
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+
+.items:nth-child(1)::before {
+    background-image: url(../images/icons.svg/hover.svg);
+    width: 16px;
+    height: 12px;
+}
+
+.items:nth-child(2)::before {
+    background-image: url(../images/icons.svg/telefon.svg);
+    width: 10px;
+    height: 16px;
+}
+
+
+
+/* .flex-feature::before {
+    display: block;
+    content: '';
+    height: 120px;
+    margin-bottom: 30px;
+    background-size: 65.32px, contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+} */
+
+
+
+
+
 
 
 a {
@@ -284,15 +339,38 @@ img {
 .feature-list {
     display: flex;
 
-
-
 }
 
 .feature-list .flex-feature + .flex-feature {
     margin-left: 30px;
 }
 
+.flex-feature::before {
+    display: block;
+    content: '';
+    height: 120px;
+    margin-bottom: 30px;
+    background-size: 65.32px, contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+}
 
+.flex-feature:nth-child(1)::before {
+    background-image: url("../images/icons.svg/antena.svg");
+}
+
+.flex-feature:nth-child(2)::before {
+    background-image: url("../images/icons.svg/clock\ .svg");
+}
+
+.flex-feature:nth-child(3)::before {
+    background-image: url("../images/icons.svg/televizor.svg");
+}
+
+.flex-feature:nth-child(4)::before {
+    background-image: url("../images/icons.svg/astronautfull.svg");
+}
 
 .section .title {
     color: var(--title-text-color);
@@ -545,6 +623,11 @@ color: var(--contact-footer);
 
 .info:hover{
     color: var(--accent-color);
+}
+
+.social-networks {
+    justify-content: center;
+    
 }
 
 
