@@ -19,6 +19,7 @@
 --button-filter: #F5F4FA;
 --hover-button: #188ce8;
 --border-box: #EEEEEE;
+--var--bg-icon: #afb1b8;
 }
 
 
@@ -418,7 +419,9 @@ display: flex;
 
 .staff {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 42px;
+    padding-right: 44px;
+    padding-left: 44px;
 }
 
 .team-list {
@@ -460,9 +463,22 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 margin-top: 0;
-margin-bottom: 0;
+margin-bottom: 16px;
 }
 
+.flex-team .socials-links:not(:last-child) {
+margin-right: 10px;
+}
+
+.socials-links {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+width: 44px;
+height: 44px;
+border-radius: 20px;
+background-color: #188ce8;
+}
 
 
 
@@ -571,25 +587,65 @@ width: 370px;
 
 /* Clients */
 
+.client {
+    padding-bottom: 94px;
+    padding-top: 94px;
+    
+}
+
 .clients {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #188ce8;
+    margin: 0;
+    padding-left: 0px;
+
+    
 }
+
+/* .clients > .item {
+border: 1px solid var(--var--bg-icon);
+} */
 
 .clients .item:not(:last-child) {
     margin-right: 30px;
 }
 
-li .item {
-    justify-content: center;
+.clients .item {
+width: 170px;
+height: 92px;
+border: 1px solid var(--var--bg-icon);
 }
 
-.button-icon {
-    width: 100px;
-    height: 100px;
+.client .links {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 170px;
+height: 92px;
 }
+
+
+
+.button-icon {
+fill: var(--var--bg-icon);
+}
+
+
+.button-icon:hover {
+fill: var(--accent-color);
+}
+
+.clients .item:hover,
+.clients .item:focus {
+border: 1px solid var(--accent-color);
+
+}
+
+/* .clients .button-icon{
+    width: 40px;
+    height: 40px;
+} */
 
 
 
