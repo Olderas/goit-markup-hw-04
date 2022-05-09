@@ -324,9 +324,7 @@ h2 {
     text-align: center;
 }
 
-img {
- display: block;
-}
+
 
 /* Преимущество компании  */
 
@@ -571,6 +569,30 @@ width: 370px;
 }
 
 
+/* Clients */
+
+.clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #188ce8;
+}
+
+.clients .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+li .item {
+    justify-content: center;
+}
+
+.button-icon {
+    width: 100px;
+    height: 100px;
+}
+
+
+
 /* footer */
 
 
@@ -625,10 +647,73 @@ color: var(--contact-footer);
     color: var(--accent-color);
 }
 
-.social-networks {
-    justify-content: center;
-    
+.networks {
+    margin-left: 70px;
 }
+
+.container.footer {
+    display: flex;
+    align-items: baseline;
+}
+
+.icon {
+    border-radius: 50px;
+    height: 20px;
+    width: 20px;
+    background: rgba(255, 255, 255, 0.1); ;
+}
+
+.icon.size {
+width: 10px;
+height: 10px;
+background-position: center;
+}
+
+.letter {
+fill: #FFFFFF;
+width: 10px;
+height: 10px;
+}
+
+.icon:hover {
+    background-color: green;
+}
+
+.icon .letter:hover {
+    fill: black;
+}
+
+
+.network {
+    content: '';
+    width: 44px;
+    height: 44px;
+    background-image: url(../images/icons.svg/fasebook.svg);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    background-size: 20px, contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+/* .networks.network {
+text-align: center;
+padding-top: 200px;
+padding-bottom: 200px;
+background: #C4C4C4;
+background-image: url(../images/icons.svg/clock\ .svg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+} */
+
+
+
+
+
+
 
 
 
