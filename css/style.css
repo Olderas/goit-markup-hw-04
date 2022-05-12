@@ -176,17 +176,15 @@ li.item.items {
     align-items: center;
 }
 
-.contact .item + .item {
+.contact .contact-list + .contact-list {
     margin-left: 30px;
 }
 
-.contact .contact-link {
-    color: var(--primari-text-color);
-}
 
-.contact .ewe:hover {
-    fill: #afb1b8;
-    background-color: #188ce8;
+a.contact-link:hover {
+    color: #188ce8;
+    fill: #188ce8;
+    /* background-color: #188ce8; */
 }
 
 
@@ -194,15 +192,24 @@ li.item.items {
     color: var(--accent-color);
 } */
 
-.ewe {
-    color: red;
+.contact-link{
+    display: flex;
+    align-items: center;
+    color: #757575;
+    fill: #757575;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+    
 }
 
 
-.icon-contact {
-    width: 44px;
-    height: 44px;
-    fill: currentColor;
+.icon-massage {
+    margin-right: 10px;
+    /* fill: currentColor; */
 }
 
 
@@ -322,6 +329,8 @@ background-size: cover;
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
+    border: none;
+    border-radius: 3px;
 }
 
 .button:hover,
@@ -512,6 +521,7 @@ display: flex;
 justify-content: center;
 align-items: baseline;
 padding-left: 0;
+margin: 0;
 }
 
 .socials-li:not(:last-child) {
@@ -540,6 +550,10 @@ margin: 0;
 margin-right: 30px;
 margin-bottom: 30px;
 
+}
+
+.flex-element:hover{
+    box-shadow: 0px 2px 3px 1px rgb(0 0 0 / 14%);
 }
 
 .box {
@@ -614,11 +628,12 @@ width: 370px;
     padding-left: 22px;
     padding-right: 22px;
     font-size: 16px;
+    line-height: 1.6;
     width: 134px;
     height: 29.59px;
-    line-height: 1.6;
     cursor: pointer;
     text-align: center;
+    border: none;
 }
 
 .buttons:hover,
@@ -756,9 +771,48 @@ color: var(--contact-footer);
 .container.footer {
     display: flex;
     align-items: baseline;
+    padding-top: 0;
+    padding-bottom: 0;
+
 }
 
 
+.title-footer {
+margin: 0;
+margin-bottom: 20px;
+color: var(--primari-white-color);
+font-size: 14px;
+line-height: 1.4;
+text-transform: uppercase;
+}
+
+.link-footer {
+display: flex;
+align-items: center;
+width: 44px;
+height: 44px;
+fill: rgba(255, 255, 255, 0.1);
+border-radius: 50px;
+}
+
+.icon-footer {
+/* width: 44px;
+height: 44px; */
+
+}
+
+.red {
+    fill: red;
+}
+
+.link-footer:hover {
+    background-color:#188ce8;
+    fill: white;
+}
+
+.lele{
+    margin-left: 70px;
+}
 
 
 
