@@ -626,19 +626,19 @@ width: 370px;
 
 
 .buttons {
-    background-color: var(--button-filter);
-    color: var(--title-text-color);
-    font-weight: 500;
-    padding-left: 22px;
-    padding-right: 22px;
-    font-size: 16px;
-    line-height: 1.6;
-    width: 134px;
-    height: 29.59px;
-    cursor: pointer;
-    text-align: center;
-    border: none;
+background-color: var(--button-filter);
+color: var(--title-text-color);
+padding: 6px 22px;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.6;
+cursor: pointer;
+text-align: center;
+border: none;
+border-radius: 3px;
 }
+
+
 
 .buttons:hover,
 .buttons:focus {
