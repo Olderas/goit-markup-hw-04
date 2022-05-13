@@ -617,6 +617,10 @@ width: 370px;
     background-color: var(--hover-button);
 } */
 
+.section .item {
+
+}
+
 
 
 
@@ -640,8 +644,8 @@ width: 370px;
 .buttons:focus {
     background-color: var(--accent-color);
     color: var(--primari-white-color);
+    box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014, 0px 3px 1px 0px #0000001a;
 }
-
 
 /* Clients */
 
