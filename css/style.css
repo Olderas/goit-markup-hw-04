@@ -70,12 +70,10 @@ ul {
 .container.header {
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        border-bottom: 1px solid var(--border-box);
 }
 
-.header {
-    border-bottom: 1px solid var(--border-box);
-}
+
 
 .logo-accent,
 .logo-black,
@@ -267,6 +265,13 @@ a {
     text-decoration: none
 }
 
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
 
 /* Герой index */
 
@@ -285,7 +290,7 @@ background-size: cover;
 
 }
 
-.hero .hero-title {
+.hero-title {
     color: var(--primari-white-color);
     font-weight: 900;
     font-size: 44px;
@@ -293,8 +298,10 @@ background-size: cover;
     letter-spacing: 0.06em;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 0;
-    margin: 0px 237px 30px;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
 }
 
 /* Кнопки */
@@ -362,10 +369,6 @@ h2 {
 /* Преимущество компании  */
 
 
-.section.feature {
-        padding-bottom: 94px;
-        padding-top: 94px;
-}
 
 .feature-list {
     display: flex;
@@ -414,8 +417,17 @@ h2 {
     text-transform: uppercase;
 }
 
-.section-title.hidden {
-display: none;
+.visually-hidden {
+position: absolute;
+white-space: nowrap;
+width: 1px;
+height: 1px;
+overflow: hidden;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+clip-path: inset(50%);
+margin: -1px;
 }
 /* Section work */
 
