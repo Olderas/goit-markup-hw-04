@@ -85,6 +85,10 @@ ul {
     letter-spacing: 0.03em;
 }
 
+.logo-link:focus{
+    fill: red;
+}
+
 .logo-accent {
     color: var(--accent-color);
     margin-right: -4px;
@@ -130,7 +134,8 @@ margin-left: 93px;
 }
 
 
-.site-nav .link:hover {
+.site-nav .link:hover,
+.site-nav .link:focus {
     color: var(--accent-color);
 }
 
@@ -179,7 +184,8 @@ li.item.items {
 }
 
 
-a.contact-link:hover {
+a.contact-link:hover,
+.contact-link:focus {
     color: #188ce8;
     fill: #188ce8;
     /* background-color: #188ce8; */
@@ -279,6 +285,8 @@ p {
 text-align: center;
 padding-top: 200px;
 padding-bottom: 200px;
+margin-left: auto;
+margin-right: auto;
 background: #C4C4C4;
 background-image: linear-gradient(to right,
 rgba(47, 48, 58, 0.4),
@@ -287,6 +295,7 @@ rgba(47, 48, 58, 0.4)
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
+max-width: 1600px;
 
 }
 
@@ -354,6 +363,7 @@ background-color: var(--hover-button)
     color: var(--title-text-color);
     margin-top: 0;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 
@@ -361,7 +371,6 @@ h2 {
     margin-top: 0;
     font-weight: 700;
     font-size: 36px;
-    text-align: center;
 }
 
 
@@ -541,7 +550,8 @@ margin: 0;
 
 }
 
-.socials-links:hover {
+.socials-links:hover,
+.socials-links:focus {
     fill: white;
     background-color: #188ce8;
 }
@@ -571,9 +581,14 @@ margin-right: 30px;
     margin-right: 0;
 }
 
-.flex-element:hover{
-    box-shadow: 0px 2px 3px 1px rgb(0 0 0 / 14%);
+.flex-link{
+display: block;
 }
+
+.flex-link:hover{
+box-shadow: 0px 2px 3px 1px rgb(0 0 0 / 14%);
+}
+
 
 .box {
 padding: 20px 24px;
@@ -701,8 +716,9 @@ justify-content: center;
 align-items: center;
 width: 170px;
 height: 92px;
-fill: #757575;
+fill: var(--var--bg-icon);
 border: 1px solid var(--var--bg-icon);
+border-radius: 3px;
 }
 
 
@@ -711,7 +727,8 @@ border: 1px solid var(--var--bg-icon);
 
 
 
-.clients .links:hover {
+.clients .links:hover,
+.clients .links:focus {
 fill: #188ce8;
 border: 1px solid var(--accent-color);
 }
@@ -788,12 +805,9 @@ color: var(--contact-footer);
 }
 
 
-.container.footer {
+.container-footer {
     display: flex;
     align-items: baseline;
-    padding-top: 0;
-    padding-bottom: 0;
-
 }
 
 
@@ -811,7 +825,8 @@ display: flex;
 align-items: center;
 width: 44px;
 height: 44px;
-fill: rgba(255, 255, 255, 0.1);
+fill: var(--primari-white-color);
+background-color: rgba(255, 255, 255, 0.1);
 border-radius: 50px;
 }
 
@@ -825,7 +840,8 @@ height: 44px; */
     fill: red;
 }
 
-.link-footer:hover {
+.link-footer:hover,
+.link-footer:focus {
     background-color:#188ce8;
     fill: white;
 }
