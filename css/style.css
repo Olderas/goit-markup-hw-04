@@ -388,7 +388,22 @@ h2 {
     margin-left: 30px;
 }
 
-.flex-feature::before {
+.container-feature {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+background: #F5F4FA;
+border-radius: 4px;
+width: 270px;
+height: 120px;
+margin-bottom: 30px;
+}
+
+
+
+
+
+/* .flex-feature::before {
     display: block;
     content: '';
     height: 120px;
@@ -397,9 +412,9 @@ h2 {
     background-repeat: no-repeat;
     background-position: center;
     background-color: #F5F4FA;
-}
+} */
 
-.flex-feature:nth-child(1)::before {
+/* .flex-feature:nth-child(1)::before {
     background-image: url("../images/icons.svg/antena.svg");
 }
 
@@ -413,7 +428,7 @@ h2 {
 
 .flex-feature:nth-child(4)::before {
     background-image: url("../images/icons.svg/astronautfull.svg");
-}
+} */
 
 .section .title {
     color: var(--title-text-color);
@@ -515,9 +530,16 @@ img {
     margin-bottom: 10px;
 }
 
-.text {
+.feature-text {
 font-size: 14px;
 line-height: 1.71;
+letter-spacing: 0.03em;
+color: #757575;
+}
+
+.text {
+font-size: 16px;
+line-height: 1.2;
 letter-spacing: 0.03em;
 margin-top: 0;
 margin-bottom: 16px;
