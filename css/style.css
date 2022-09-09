@@ -472,14 +472,62 @@ margin: -1px;
 display: flex;
 }
 
-.flex-item {
-    width: 370px;
+.position-container {
+    position: relative;
 
 }
 
-.work-list .flex-item + .flex-item{
+.flex-item {
+
+width: 370px;
+}
+
+/* .work-list .flex-item + .flex-item{
+    margin-left: 30px;
+} */
+
+.position-container:nth-child(+n + 2) {
     margin-left: 30px;
 }
+
+.position-list {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 72px;
+bottom: 0;
+position: absolute;
+background: rgba(47, 48, 58, 0.8);
+color: var(--primari-white-color);
+/* opacity: 0; */
+
+
+
+/* display: flex;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.2px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+width: 205px;
+height: 16px;
+left: 90px;
+right: 90px;
+bottom: 27px;
+transform: translate(-50%, -50%);
+position: absolute;
+background:#188ce8; */
+
+
+}
+
+/* .position-container:hover .position-list {
+    opacity: 1;
+} */
+
+
 
 
     /* Section team */
